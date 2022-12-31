@@ -1,1 +1,17 @@
-<p>login-page works!</p>
+
+<div>
+    <label for="username">Username: </label>
+    <input id="username" #username />
+
+    <label for="password">Password: </label>
+    <input id="password" #password />
+
+    <div *ngIf="loginSuccess == false">
+        Username or Password are incorrect
+    </div>
+  
+    <!--On click, if login attempt fails, change result to false-->
+    <button type="button" class="login" (click)="loginSuccess = loginAttempt(username.value, password.value); password.value=''">
+      Login
+    </button>
+  </div>

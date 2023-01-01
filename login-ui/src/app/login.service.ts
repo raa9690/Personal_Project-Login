@@ -21,21 +21,4 @@ export class LoginService {
     return false
   }
 
-  // Temp UI side 
-  public registerAttempt(new_username: string, new_password: string){
-    for (let user of this.users) {
-      if (new_username == user.username && new_password == user.password){
-        return false;
-      }
-    }
-
-    this.users.push(
-      {
-        id: this.users.length, 
-        username: new_username, 
-        password: new_password
-      }
-    )
-    return true;
-  }
 }

@@ -1,0 +1,18 @@
+
+<div>
+    <label for="username">Username: </label>
+    <input id="username" #username />
+  
+    <label for="password">Password: </label>
+    <input id="password" #password />
+  
+    <div *ngIf="registerFailed == false">
+        Username already exists
+    </div>
+    
+    <!--On click, if login attempt fails, change result to false-->
+    <button type="button" class="login" (click)="registerFailed = registerAttempt(username.value, password.value); password.value=''">
+      register
+    </button>
+    
+  </div>

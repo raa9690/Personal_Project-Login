@@ -12,7 +12,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 export class LoginPageComponent {
 
   // True at start so that the failed login message doesn't display until after a login attempt is made
-  loginSuccess = true
+  loginFailed = false;
 
   constructor(
     private loginService: LoginService,
@@ -22,6 +22,7 @@ export class LoginPageComponent {
   loginAttempt(username:string, password:string): boolean{
     if (this.loginService.loginAttempt(username, password)){
       this.router.navigate(["home-page"])
+      return true;
     }
     return false;
   }

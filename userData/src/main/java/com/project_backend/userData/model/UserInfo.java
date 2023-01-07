@@ -15,15 +15,29 @@ public class UserInfo {
     public UserInfo() {
     }
 
-    public UserInfo(int id, String firstName, String lastName) {
+    // currently no form of encryption for the password
+    public UserInfo(int id, String username, String password) {
         this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this.username = username;
+        this.password = password;
     }
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int getId() {
         return id;
     }
-//other setters and getters
+    public String getUsername() {
+        return username;
+    }
+    public String getPassword() {
+        return password;
+    }
+    // currently no use for this right now, though might be useful for changing account info
+    public void setUsername(String username){
+        this.username = username;
+    }
+    // currently no use for this right now, though might be useful for changing account info
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }

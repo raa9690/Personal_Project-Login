@@ -8,11 +8,11 @@
 		<version>3.0.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.login</groupId>
-	<artifactId>userInfo</artifactId>
+	<groupId>com.project_backend</groupId>
+	<artifactId>userData</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>userInfo</name>
-	<description>RESTful Spring Boot API for the login info to be stored in a MySQL database. Generated through https://start.spring.io/</description>
+	<name>userData</name>
+	<description>Api to handle user data</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

@@ -1,13 +1,13 @@
-package com.login.userInfo;
+package com.project_backend.userData;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class UserInfoApplication {
+public class UserDataApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(UserInfoApplication.class, args);
+		SpringApplication.run(UserDataApplication.class, args);
 	}
 
 }

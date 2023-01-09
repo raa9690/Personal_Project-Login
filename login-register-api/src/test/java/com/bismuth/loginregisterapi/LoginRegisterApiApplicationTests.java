@@ -1,10 +1,10 @@
-package com.project_backend.userData;
+package com.bismuth.loginregisterapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class UserDataApplicationTests {
+class LoginRegisterApiApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,4 +1,4 @@
-package com.bismuth.loginregisterapi;
+package com.vscode.loginregisterapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

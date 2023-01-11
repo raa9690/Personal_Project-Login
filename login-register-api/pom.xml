@@ -8,18 +8,22 @@
 		<version>3.0.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.bismuth</groupId>
+	<groupId>com.vscode</groupId>
 	<artifactId>login-register-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>login-register-api</name>
-	<description>Login and register REST api for an Angular project with a MySQL backend</description>
+	<description>RESTful Spring API for login/register functionality in an Angular Web app with a MySQL Database</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>19</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -35,6 +39,17 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+    		<groupId>org.springframework.boot</groupId>
+   			<artifactId>spring-boot-devtools</artifactId>
+    		<scope>runtime</scope>
+    		<optional>true</optional>
 		</dependency>
 	</dependencies>
 

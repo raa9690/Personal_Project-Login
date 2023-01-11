@@ -1,9 +1,11 @@
-package com.bismuth.loginregisterapi.data.repository;
+package com.vscode.loginregisterapi.data.repository;
 
-import com.bismuth.loginregisterapi.data.models.User;
- 
+import com.vscode.loginregisterapi.data.models.User;
+
 import org.springframework.data.jpa.repository.JpaRepository;
+
+
  
 public interface UserRepository extends JpaRepository<User, Long> {
- 
+    public User findByEmail(String username);
 }

@@ -1,4 +1,4 @@
-package com.bismuth.loginregisterapi.data.models;
+package com.vscode.loginregisterapi.data.models;
 
 import jakarta.persistence.*;
  

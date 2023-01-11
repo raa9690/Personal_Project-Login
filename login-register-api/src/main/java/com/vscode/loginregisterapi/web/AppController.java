@@ -1,6 +1,6 @@
-package com.bismuth.loginregisterapi.web;
+package com.vscode.loginregisterapi.web;
 
-import com.bismuth.loginregisterapi.data.repository.UserRepository;
+import com.vscode.loginregisterapi.data.repository.UserRepository;
  
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

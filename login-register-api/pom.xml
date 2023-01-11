@@ -12,7 +12,7 @@
 	<artifactId>login-register-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>login-register-api</name>
-	<description>Login and register API functionality for a Angular based web app with a MySQL backend</description>
+	<description>Login and register REST api for an Angular project with a MySQL backend</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -26,12 +26,6 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-			<optional>true</optional>
-		</dependency>
 		<dependency>
 			<groupId>com.mysql</groupId>
 			<artifactId>mysql-connector-j</artifactId>
